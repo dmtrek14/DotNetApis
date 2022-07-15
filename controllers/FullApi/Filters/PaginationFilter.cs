@@ -1,5 +1,9 @@
 ﻿namespace FullApi.Filters
 {
+	/// <summary>
+	/// Provides a default page size of 25 and max page size of 50 and validates page number/size input. 
+	/// If inputs are not valid (e.g., page number of -1 or page size exceeding min), they are set to valid values
+	/// </summary>
 	public class PaginationFilter
 	{
 		public int PageNumber { get; set; }
